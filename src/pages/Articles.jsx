@@ -12,6 +12,7 @@ const Articles = () => {
         <img src={BlackRect} alt="" />
       </center>
 
+      <div className="articles">
       <div className="row">
         <div className="col-sm-12 col-md-12 col-lg-1"></div>
         <div className="col-sm-12 col-md-12 col-lg-10">
@@ -25,9 +26,9 @@ const Articles = () => {
                 In this case, the role of the health laboratory is very
                 important to do a disease detection...
               </p>
-              <p>
+              <a href="#">
                 Read more <FontAwesomeIcon icon={faArrowRight} />{" "}
-              </p>
+              </a>
               </div>
              </div>
             </div>
@@ -40,9 +41,9 @@ const Articles = () => {
                 Herbal medicine is very widely used at this time because of its
                 very good for your health...
               </p>
-              <p>
-                Read more <FontAwesomeIcon icon={faArrowRight} />
-              </p>
+              <a href="#">
+                Read more <FontAwesomeIcon icon={faArrowRight} />{" "}
+              </a>
                 </div>
               </div>
             </div>
@@ -51,20 +52,26 @@ const Articles = () => {
               <img src={Mask} alt="" className="art-side" />
                 <div className="card-body">
                 
-              <h4>Natural care for healthy facial skin</h4>
+              <h4>Natural care for healthy facial skin
+                <hr />
+              </h4>
               <p>
                 A healthy lifestyle should start from now and also for your skin
-                health. There are some...
+                health. <br />There are some...
               </p>
-              <p>
-                Read more <FontAwesomeIcon icon={faArrowRight} />
-              </p>
+              <a href="#">
+                Read more <FontAwesomeIcon icon={faArrowRight} />{" "}
+              </a>
                 </div>
               </div>
             </div>
           </div>
+          <center>
+          <button className="btn learn">View all</button>
+            </center>
         </div>
         <div className="col-sm-12 col-md-12 col-lg-1"></div>
+      </div>
       </div>
     </React.Fragment>
   );

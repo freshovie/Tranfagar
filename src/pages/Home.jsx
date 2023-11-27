@@ -2,7 +2,6 @@ import React from "react";
 import "./style.scss";
 // import { WhiteRect, Man } from "../assets";
 import { HeroImg } from "../assets";
-import ServiceR from "./ServiceR";
 
 const Home = () => {
   return (
@@ -12,14 +11,14 @@ const Home = () => {
         <div className="col-sm-12 col-md-12 col-lg-10">
           <div className="row coll">
             <div className="col-sm-12 col-md-12 col-lg-6">
-              <h4 id="head1">
-                Virtual healthcare <br /> for you
-              </h4>
+              <h3 id="head1">
+                Virtual healthcare for you
+              </h3>
               <p>
                 Trafalgar provides progressive, and affordable <br />{" "}
                 healthcare, accessible on mobile and online <br /> for everyone
               </p>
-              <button id="consult">Consult today</button>
+              <button className="consult">Consult today</button>
             </div>
             <div className="col-sm-12 col-md-12 col-lg-6">
               <img src={HeroImg} alt="" className="w-100" />
@@ -28,7 +27,6 @@ const Home = () => {
         </div>
         <div className="col-sm-12 col-md-12 col-lg-1"></div>
       </div>
-      <ServiceR />
     </React.Fragment>
   );
 };

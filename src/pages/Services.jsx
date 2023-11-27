@@ -109,14 +109,14 @@ export const Services = () => {
                         src={Search}
                         alt=""
                         className="w-25"
-                        style={{ marginBottom: "30px" }}
+                        style={{ marginBottom: "50px" }}
                       />
                     </motion.div>
 
                     <h5>Search doctor</h5>
                     <p>
-                      Choose your doctor from thousands <br /> of specialist,
-                      general, and trusted <br /> hospitals
+                      Choose your doctor from thousands of specialist,
+                      general, and trusted hospitals
                     </p>
                   </div>
                 </div>
@@ -204,7 +204,7 @@ export const Services = () => {
                         src={First}
                         alt=""
                         className="w-25"
-                        style={{ marginBottom: "30px" }}
+                        style={{ marginBottom: "50px" }}
                       />
                     </motion.div>
                     <h5>Search doctor</h5>
@@ -237,9 +237,9 @@ export const Services = () => {
                   </div>
                 </div>
               </div>
-
+              </div>
               <center><button className="their">Learn more</button></center>
-            </div>
+            
           </div>
           <div className="col-sm-12 col-md-12 col-lg-1"></div>
         </div>
