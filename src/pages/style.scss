@@ -343,7 +343,7 @@ img {
 
 .call {
   position: relative;
-  z-index: 1;
+  z-index: 2;
   .bovs{
     position: absolute;
     z-index: 0;
@@ -402,6 +402,16 @@ img {
     top: -25%;
     transform: scaleX(-1);
     transform: rotate(180deg);
+  }
+  h2{
+    z-index: 2;
+    font-weight: bolder;
+    }
+  .betes{
+    position: absolute;
+    z-index: 0;
+    bottom: 0;
+    right: 10%;
   }
   .card {
     margin-bottom: 10px;
