@@ -27,7 +27,8 @@ const Articles = () => {
               </h4>
               <p>
                 In this case, the role of the health laboratory is very
-                important to do a disease detection...
+                important to do a disease detection
+                <br />...
               </p>
               <a href="#">
                 Read more <FontAwesomeIcon icon={faArrowRight} />{" "}
