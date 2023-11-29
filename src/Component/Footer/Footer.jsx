@@ -1,4 +1,5 @@
 import React from "react";
+import { FourEyes } from "../../assets";
 import "./footer.scss";
 
 const Footer = () => {
@@ -7,6 +8,7 @@ const Footer = () => {
       <section class="">
         {/* !-- Footer -- */}
         <footer class="footer bg-body-tertiary text-center text-md-start">
+          <img src={ FourEyes } alt="" className="eyes" />
           {/* !-- Grid container -- */}
           <div class="container p-4">
             {/* <!--Grid row--> */}

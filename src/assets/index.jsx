@@ -20,4 +20,11 @@ export const WhiteRect = require('./Rectangle 17.png');
 export const BlackRect = require('./Rectangle 2.png');
 
 export const WhiteLogo = require('./Trafalgar.png')
+export const Element = require('./ element2.png')
+export const ElementBg = require('./bg element.png')
+export const FourEyes = require('./element.png')
+
+
+
+
 

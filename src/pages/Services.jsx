@@ -8,13 +8,15 @@ import {
   First,
   Record3,
   BlackRect,
+  ElementBg,
+  Element
 } from "../assets";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { useAnimation } from "framer-motion";
 import { useEffect } from "react";
-// import Carousel from 'react-multi-carousel';
-import 'react-multi-carousel/lib/styles.css';
+
+import "react-multi-carousel/lib/styles.css";
 export const Services = () => {
   const { ref, inView } = useInView({ threshold: 0.5 });
   const animation = useAnimation();
@@ -37,47 +39,12 @@ export const Services = () => {
       });
     }
   }, [inView, animation]);
-  // useEffect(() => {
-  //   if (inView2) {
-  //     animation2.start({
-  //       scale: 1,
-  //       transition: {
-  //         type: "spring.=",
-  //         duration: 2,
-  //         bounce: 0.3,
-  //       },
-  //     });
-  //   } else {
-  //     animation2.start({
-  //       scale: 0.8,
-  //       transition: {
-  //         duration: 2,
-  //       },
-  //     });
-  //   }
-  // }, [inView2, animation2]);
-  // useEffect(() => {
-  //   if (inView3) {
-  //     animation3.start({
-  //       scale: 1,
-  //       transition: {
-  //         type: "spring",
-  //         duration: 2,
-  //         bounce: 0.3,
-  //       },
-  //     });
-  //   } else {
-  //     animation3.start({
-  //       scale: 0.8,
-  //       transition: {
-  //         duration: 2,
-  //       },
-  //     });
-  //   }
-  // }, [inView3, animation3]);
+
   return (
     <React.Fragment>
       <div className="maservice-lg">
+      <img src={ ElementBg } alt="" className="runit" />
+      <img src={ Element } alt="" className="runit2" />
         <div className="row">
           <div className="col-sm-12 col-md-12 col-lg-1"></div>
           <div className="col-sm-12 col-md-12 col-lg-10">
@@ -115,8 +82,8 @@ export const Services = () => {
 
                     <h5>Search doctor</h5>
                     <p>
-                      Choose your doctor from thousands of specialist,
-                      general, and trusted hospitals
+                      Choose your doctor from thousands of specialist, general,
+                      and trusted hospitals
                     </p>
                   </div>
                 </div>
@@ -168,6 +135,7 @@ export const Services = () => {
                 </div>
               </div>
 
+              
               <div className="row">
                 <div className="col-sm-12 col-md-12 col-lg-4">
                   {/* 4th box */}
@@ -237,15 +205,17 @@ export const Services = () => {
                   </div>
                 </div>
               </div>
-              </div>
-              <center><button className="their">Learn more</button></center>
+            </div>
+
+            <center>
+              <button className="their">Learn more</button>
+            </center>
+
             
           </div>
           <div className="col-sm-12 col-md-12 col-lg-1"></div>
         </div>
       </div>
-
-      
     </React.Fragment>
   );
 };

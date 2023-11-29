@@ -1,12 +1,14 @@
 import React from "react";
 import "./style.scss";
-import { SVG1, SVG2, BlackRect } from "../assets";
+import { SVG1, SVG2, BlackRect, Element } from "../assets";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
 
 export const TwoLines = () => {
   return (
     <React.Fragment>
+      <div className="abbr">
+<img src={ Element } alt="" className="ele"/>
       <div className="row">
         <div className="col-sm-12 col-md-12 col-lg-1"></div>
         <div className="col-sm-12 col-md-12 col-lg-10">
@@ -45,6 +47,7 @@ export const TwoLines = () => {
           </div>
         </div>
         <div className="col-sm-12 col-md-12 col-lg-1"></div>
+      </div>
       </div>
     </React.Fragment>
   );

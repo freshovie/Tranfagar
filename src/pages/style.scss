@@ -3,9 +3,21 @@
 img {
   width: inherit;
 }
+
+.loveco {
+  position: relative;
+  z-index: 1;
+  .nog {
+    z-index: 0;
+    width: auto;
+    position: absolute;
+    top: 0;
+  }
+}
 .coll {
   margin-top: 1rem;
   align-items: center;
+
   p {
     color: black;
     margin-bottom: 20px;
@@ -16,9 +28,8 @@ img {
     font-weight: 700;
     margin-bottom: 20px;
     @media screen and (min-width: 995px) {
-      width: 70%;      
+      width: 70%;
     }
-    
   }
   .consult {
     border-radius: 55px;
@@ -66,8 +77,26 @@ img {
   }
 }
 
-.react-multi-carousel-list.carousel-container{
+.react-multi-carousel-list.carousel-container {
   display: none;
+}
+
+.maservice-lg {
+  position: relative;
+  z-index: 1;
+  .runit {
+    position: absolute;
+    z-index: 0;
+    width: 60%;
+    top: 0;
+  }
+  .runit2 {
+    position: absolute;
+    z-index: 0;
+    width: 10%;
+    right: 10%;
+    margin-top: 27%;
+  }
 }
 
 @media screen and (max-width: 995px) {
@@ -77,7 +106,7 @@ img {
   .react-multi-carousel-list.carousel-container {
     display: flex;
     align-items: center;
-   margin-top: 20px;
+    margin-top: 20px;
     margin-bottom: 20px;
     .box-1 {
       padding: 2px 25px;
@@ -129,128 +158,140 @@ img {
   }
 }
 
-.other {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin-bottom: 10px;
-  gap: 4rem;
-  img {
-    width: 50%;
-  }
-  .toh1 {
-    p {
-      color: #7d7987;
-      font-size: 20px;
-      font-weight: 300;
-      margin-bottom: 30px;
+.abbr {
+  position: relative;
+  z-index: 1;
+  .other {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 10px;
+    gap: 4rem;
+    img {
+      width: 50%;
     }
-    h4 {
-      font-weight: 700;
-      margin-bottom: 10px;
+    .toh1 {
+      p {
+        color: #7d7987;
+        font-size: 20px;
+        font-weight: 300;
+        margin-bottom: 30px;
+      }
+      h4 {
+        font-weight: 700;
+        margin-bottom: 10px;
+      }
+      button {
+        outline: none;
+        color: #458ff6;
+        padding: 8px 25px;
+        border-radius: 55px;
+        border: 1.4px solid #458ff6;
+        background-color: transparent;
+        &:hover {
+          background-color: #458ff6;
+          color: #fff;
+          transition: 1s;
+        }
+      }
     }
-    button {
-      outline: none;
-      color: #458ff6;
-      padding: 8px 25px;
-      border-radius: 55px;
-      border: 1.4px solid #458ff6;
-      background-color: transparent;
-      &:hover {
-        background-color: #458ff6;
-        color: #fff;
-        transition: 1s;
+    @media screen and (max-width: 994px) {
+      flex-direction: column;
+      gap: 30px;
+      margin-bottom: 20px;
+      img {
+        width: 100%;
+      }
+      h4 {
+        text-align: center;
+        width: auto;
+      }
+      p {
+        text-align: center;
+        width: auto;
+      }
+      button {
+        width: 100%;
+      }
+      .rect {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+        margin-bottom: 10px;
+        margin-top: 10px;
       }
     }
   }
-  @media screen and (max-width: 994px) {
-    flex-direction: column;
-    gap: 30px;
-    margin-bottom: 20px;
-    img {
-      width: 100%;
-    }
-    h4 {
-      text-align: center;
-      width: auto;
-    }
-    p {
-      text-align: center;
-      width: auto;
-    }
-    button {
-      width: 100%;
-    }
-    .rect {
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-      width: 50%;
-      margin-bottom: 10px;
-      margin-top: 10px;
-    }
-  }
-}
 
-.other4 {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin-bottom: 20px;
-  gap: 4rem;
-  img {
-    width: 50%;
+  .ele {
+    position: absolute;
+    width: auto;
+    z-index: 0;
+    right: 0;
+    top: 50%;
   }
-  .toh {
-    p {
-      color: #7d7987;
-      font-size: 20px;
-      font-weight: 300;
-      margin-bottom: 30px;
+
+  .other4 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
+    gap: 4rem;
+    img {
+      width: 50%;
     }
-    h4 {
-      font-weight: 700;
-      margin-bottom: 10px;
-    }
-    button {
-      outline: none;
-      color: #458ff6;
-      padding: 8px 25px;
-      border-radius: 55px;
-      border: 1.4px solid #458ff6;
-      background-color: transparent;
-      &:hover {
-        background-color: #458ff6;
-        color: #fff;
-        transition: 1s;
+    .toh {
+      p {
+        color: #7d7987;
+        font-size: 20px;
+        font-weight: 300;
+        margin-bottom: 30px;
+      }
+      h4 {
+        font-weight: 700;
+        margin-bottom: 10px;
+      }
+      button {
+        outline: none;
+        color: #458ff6;
+        padding: 8px 25px;
+        border-radius: 55px;
+        border: 1.4px solid #458ff6;
+        background-color: transparent;
+        &:hover {
+          background-color: #458ff6;
+          color: #fff;
+          transition: 1s;
+        }
       }
     }
-  }
-  @media screen and (max-width: 994px) {
-    flex-direction: column-reverse;
-    gap: 30px;
-    margin-bottom: 20px;
-    img {
-      width: 100%;
-    }
-    h4 {
-      text-align: center;
-      width: auto;
-    }
-    p {
-      text-align: center;
-      width: auto;
-    }
-    button {
-      width: 100%;
-    }
-    .rect {
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-      width: 50%;
-      margin-bottom: 10px;
-      margin-top: 10px;
+    @media screen and (max-width: 994px) {
+      flex-direction: column-reverse;
+      gap: 30px;
+      margin-bottom: 20px;
+      img {
+        width: 100%;
+      }
+      h4 {
+        text-align: center;
+        width: auto;
+      }
+      p {
+        text-align: center;
+        width: auto;
+      }
+      button {
+        width: 100%;
+      }
+      .rect {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+        margin-bottom: 10px;
+        margin-top: 10px;
+      }
     }
   }
 }
@@ -259,28 +300,10 @@ img {
   text-align: center;
   margin-bottom: 6rem;
 }
-
-.check {
-  display: flex;
-  gap: 4rem;
-  justify-content: center;
-}
-
 .mantext {
   margin-top: 20px;
 }
-
-.man-image {
-  display: flex;
-  gap: 20px;
-}
-
-.man-text {
-  margin-top: 25px;
-}
-
 .saying {
-  /* text-align: center; */
   margin-bottom: 5rem;
 }
 
@@ -292,7 +315,6 @@ img {
   background: linear-gradient(208deg, #67c3f3 9.05%, #5a98f2 76.74%);
   border-radius: 24px;
   width: 90%;
-  /* height: 300px; */
   padding: 30px 0px;
 }
 
@@ -319,30 +341,72 @@ img {
   border-radius: 5px 0 5px 0;
 }
 
-.show {
-  background: linear-gradient(208deg, #67c3f3 9.05%, #5a98f2 76.74%);
-  height: 92%;
-  border-radius: 10px;
-  margin-top: 20px;
-  // margin-bottom: 20px;
-  h4 {
-    margin-top: 20px;
+.call {
+  position: relative;
+  z-index: 1;
+  .bovs{
+    position: absolute;
+    z-index: 0;
+    left: 5%;
+    bottom: 0;
   }
-  @media screen and (max-width: 994px) {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    .check{
+  .show {
+    background: linear-gradient(208deg, #67c3f3 9.05%, #5a98f2 76.74%);
+    height: 92%;
+    border-radius: 10px;
+    margin-top: 20px;
+    position: relative;
+    z-index: 0;
+    .movs{
+      position: absolute;
+      z-index: 1;
+      width: auto;
+      right: 0;
+      top: 0;
+    }
+    h4 {
+      margin-top: 20px;
+    }
+    .check {
+      display: flex;
+      gap: 4rem;
+      justify-content: center;
+      .man-image {
+        display: flex;
+        gap: 20px;
+      }
+
+      .man-text {
+        margin-top: 25px;
+      }
+    }
+    @media screen and (max-width: 994px) {
+      display: flex;
       flex-direction: column;
+      align-items: center;
+      .check {
+        flex-direction: column;
+      }
     }
   }
 }
 
 .articles {
+  position: relative;
+  z-index: 1;
+  .ban{
+    position: absolute;
+    z-index: 0;
+    width: auto;
+    right: 0;
+    top: -25%;
+    transform: scaleX(-1);
+    transform: rotate(180deg);
+  }
   .card {
     margin-bottom: 10px;
     border-radius: 40px;
-      box-shadow: 10px 40px 50px 0px rgba(229, 233, 246, 0.4);
+    box-shadow: 10px 40px 50px 0px rgba(229, 233, 246, 0.4);
     .card-body {
       p {
         color: black;
@@ -353,15 +417,14 @@ img {
       }
     }
   }
-  hr{
-    // border: none;
+  hr {
     margin-top: 1.7rem;
     margin-bottom: 1rem;
     color: transparent;
     background-color: transparent;
     border-top: 1px solid;
   }
-  .learn{
+  .learn {
     color: white;
     outline: none;
     color: #458ff6;
