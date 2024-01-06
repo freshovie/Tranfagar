@@ -7,29 +7,27 @@ const Home = () => {
   return (
     <React.Fragment>
       <div className="loveco">
-      <img src={Element} alt="" className="nog" />
-      <div className="row">
-        <div className="col-sm-12 col-md-12 col-lg-1"></div>
-        <div className="col-sm-12 col-md-12 col-lg-10">
-          <div className="row coll">
-
-            <div className="col-sm-12 col-md-12 col-lg-6">
-              <h3 id="head1">
-                Virtual healthcare for you
-              </h3>
-              <p>
-                Trafalgar provides progressive, and affordable <br />{" "}
-                healthcare, accessible on mobile and online <br /> for everyone
-              </p>
-              <button className="consult">Consult today</button>
-            </div>
-            <div className="col-sm-12 col-md-12 col-lg-6">
-              <img src={HeroImg} alt="" className="w-100" />
+        <img src={Element} alt="" className="nog" />
+        <div className="row">
+          <div className="col-sm-12 col-md-12 col-lg-1"></div>
+          <div className="col-sm-12 col-md-12 col-lg-10">
+            <div className="row coll">
+              <div className="col-sm-12 col-md-12 col-lg-6">
+                <h3 id="head1">Virtual healthcare for you</h3>
+                <p>
+                  Trafalgar provides progressive, and affordable <br />{" "}
+                  healthcare, accessible on mobile and online <br /> for
+                  everyone
+                </p>
+                <button className="consult">Consult today</button>
+              </div>
+              <div className="col-sm-12 col-md-12 col-lg-6">
+                <img src={HeroImg} alt="" className="w-100" />
+              </div>
             </div>
           </div>
+          <div className="col-sm-12 col-md-12 col-lg-1"></div>
         </div>
-        <div className="col-sm-12 col-md-12 col-lg-1"></div>
-      </div>
       </div>
     </React.Fragment>
   );

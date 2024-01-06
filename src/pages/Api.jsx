@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import './style.scss'
+import "./style.scss";
 
 const Api = () => {
   const [data, setData] = useState([]);
@@ -36,9 +36,9 @@ const Api = () => {
     <div className="d-flex justify-content-between">
       {data?.map((item, index) => (
         // <p key={index}>{item.name}</p>
-        <div key = {index}>
-            <h2>{item.name}</h2>
-          <img src= {item.image} alt="" className="w-100 h-auto"/>
+        <div key={index}>
+          <h2>{item.name}</h2>
+          <img src={item.image} alt="" className="w-100 h-auto" />
         </div>
       ))}
     </div>
